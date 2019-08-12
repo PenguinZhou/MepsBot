@@ -29,6 +29,9 @@
 10. Medium devices (992-1200px)
 11. Large devices (more 1200px)
 
+**************
+12. Fonts: Verdana, same as Reddit
+
 -------------------------------------------------------------------*/
 
 
@@ -1225,3 +1228,6 @@ a.down:hover {
         padding: 0;
     }
 }
+
+/************ Font *****************/
+h1 { font-family: Verdana, Geneva, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Verdana, Geneva, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Verdana, Geneva, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Verdana, Geneva, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Verdana, Geneva, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
