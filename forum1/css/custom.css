@@ -428,7 +428,7 @@ td.chbox {
 
     border-radius: 2px;
     box-shadow: 0 1px 2px #c9cccd;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 }
 
 .post .wrap-ut {
@@ -446,7 +446,7 @@ td.chbox {
     padding-top: 20px;
     padding-bottom: 15px;
 
-    color: #989c9e;
+    color: #3b4249;
     font-size: 14px;
     font-family: 'Open Sans Light', sans-serif;   
     line-height: 25px;
@@ -535,11 +535,6 @@ td.chbox {
 .post .time i {
     font-size: 14px;
 }
-
-
-
-
-
 
 
 /*-----------------------------------------------------------------*/

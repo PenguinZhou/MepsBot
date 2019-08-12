@@ -165,7 +165,18 @@ function next_rec(){
     }
 }
 
-
+function deactiveNumber() {
+    document.getElementById('tp1').className = "";
+    document.getElementById('tp2').className = "";
+    document.getElementById('tp3').className = "";
+    document.getElementById('tp4').className = "";
+    document.getElementById('tp5').className = "";
+    document.getElementById('tp6').className = "";
+    document.getElementById('tp7').className = "";
+    document.getElementById('tp8').className = "";
+    document.getElementById('tp9').className = "";
+    document.getElementById('tp10').className = "";
+}
 
 
 function changePage(id){
@@ -180,13 +191,21 @@ function changePage(id){
     var page9 = document.getElementById('Page9');
     var page10 = document.getElementById('Page10');
     var pageList = new Array(page1, page2, page3, page4, page5, page6, page7, page8, page9, page10);
-    var count = pageList.length;
+
+    // The following code is too redundant, but I am so tired that I don't want to modify any.
+    // for(var item in pageList) {
+    //     pageList[item].style = "display: none";
+    //     pageList[item].className = "col-lg-8 col-md-8";
+    // }
+
+    deactiveNumber()
     switch (id) {
         case "bp1":
             for(var item in pageList) {
                 if (pageList[item] == page1) {
                     pageList[item].style = "display: inline";
                     pageList[item].className = "col-lg-8 col-md-8";
+                    document.getElementById(id).childNodes[0].className = "active";
                 }
                 else {
                     pageList[item].style = "display: none";
@@ -199,6 +218,7 @@ function changePage(id){
                 if (pageList[item] == page2) {
                     pageList[item].style = "display: inline";
                     pageList[item].className = "col-lg-8 col-md-8";
+                    document.getElementById(id).childNodes[0].className = "active";
                 }
                 else {
                     pageList[item].style = "display: none";
@@ -211,6 +231,7 @@ function changePage(id){
                 if (pageList[item] == page3) {
                     pageList[item].style = "display: inline";
                     pageList[item].className = "col-lg-8 col-md-8";
+                    document.getElementById(id).childNodes[0].className = "active";
                 }
                 else {
                     pageList[item].style = "display: none";
@@ -223,6 +244,7 @@ function changePage(id){
                 if (pageList[item] == page4) {
                     pageList[item].style = "display: inline";
                     pageList[item].className = "col-lg-8 col-md-8";
+                    document.getElementById(id).childNodes[0].className = "active";
                 }
                 else {
                     pageList[item].style = "display: none";
@@ -235,6 +257,7 @@ function changePage(id){
                 if (pageList[item] == page5) {
                     pageList[item].style = "display: inline";
                     pageList[item].className = "col-lg-8 col-md-8";
+                    document.getElementById(id).childNodes[0].className = "active";
                 }
                 else {
                     pageList[item].style = "display: none";
@@ -247,6 +270,7 @@ function changePage(id){
                 if (pageList[item] == page6) {
                     pageList[item].style = "display: inline";
                     pageList[item].className = "col-lg-8 col-md-8";
+                    document.getElementById(id).childNodes[0].className = "active";
                 }
                 else {
                     pageList[item].style = "display: none";
@@ -259,10 +283,12 @@ function changePage(id){
                 if (pageList[item] == page7) {
                     pageList[item].style = "display: inline";
                     pageList[item].className = "col-lg-8 col-md-8";
+                    document.getElementById(id).childNodes[0].className = "active";
                 }
                 else {
                     pageList[item].style = "display: none";
                     pageList[item].className = "col-lg-8 col-md-8";
+                    document.getElementById(id).childNodes[0].className = "active";
                 }
             }
             break;
@@ -271,6 +297,7 @@ function changePage(id){
                 if (pageList[item] == page8) {
                     pageList[item].style = "display: inline";
                     pageList[item].className = "col-lg-8 col-md-8";
+                    document.getElementById(id).childNodes[0].className = "active";
                 }
                 else {
                     pageList[item].style = "display: none";
@@ -283,6 +310,7 @@ function changePage(id){
                 if (pageList[item] == page9) {
                     pageList[item].style = "display: inline";
                     pageList[item].className = "col-lg-8 col-md-8";
+                    document.getElementById(id).childNodes[0].className = "active";
                 }
                 else {
                     pageList[item].style = "display: none";
@@ -295,6 +323,7 @@ function changePage(id){
                 if (pageList[item] == page10) {
                     pageList[item].style = "display: inline";
                     pageList[item].className = "col-lg-8 col-md-8";
+                    document.getElementById(id).childNodes[0].className = "active";
                 }
                 else {
                     pageList[item].style = "display: none";
