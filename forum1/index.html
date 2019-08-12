@@ -32,6 +32,7 @@
 
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+    <script src="analyse.js"></script>
 
 </head>
 
@@ -115,19 +116,18 @@
                         <div class="topwrap">
                             <div class="userinfo pull-left">
                                 <div class="avatar">
-                                    <h5 style="font-weight: bold">circinia</h5>
+                                    <h5 style="font-weight: bold" id="OP-name">circinia</h5>
                                 </div>
 
 
                             </div>
                             <div class="posttext pull-left">
-                                <h2 style="font-weight: bold">The title of the question</h2>
-                                <p style="color: #3b4249">Today, we're looking at three particularly interesting stories. Pinterest added a
-                                    new location-based feature on Wednesday that uses Place Pins as a way to map out
-                                    vacations and favorite areas. Southwest Airlines is providing Wi-Fi access from
-                                    gate to gate for $8 per day through an onboard hotspot. And in an effort to ramp
-                                    up its user base, Google Wallet is offering a debit card that can take out cash
-                                    from.</p>
+                                <h2 style="font-weight: bold" id="OP-title">I have no friends</h2>
+                                <p style="color: #3b4249" id="OP-content">I have no friends at all. Ive just came out of
+                                    a 7 year relationship 2 months ago and since then I've been out drinking with someone
+                                    once but that was 6 weeks ago. I haven't spoke to anybody apart from my parents for over
+                                    1 month I've also lost my job. I just wish someone could talk to me because I'm going
+                                    insane listening to silence. What is the point anymore :(.</p>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -206,21 +206,31 @@
                         <div class="clearfix"></div>
                     </div>
 
-                    <div class="col-lg-8 col-xs-12 col-md-8">
-                        <div class="pull-left">
-                            <ul class="paginationforum">
-                                <li onclick="changePage1()"><a >1</a></li>
-                                <li onclick="changePage2()"><a >2</a></li>
-                                <li onclick="changePage3()"><a>3</a></li>
-                            </ul>
+                    <div class="container">
+                        <div class="col-lg-8 col-xs-12 col-md-8">
+                            <div class="pull-left">
+                                <ul class="paginationforum">
+                                    <li onclick="changePage(this.id)" id="bp1"><a >1</a></li>
+                                    <li onclick="changePage(this.id)" id="bp2"><a >2</a></li>
+                                    <li onclick="changePage(this.id)" id="bp3"><a>3</a></li>
+                                    <li onclick="changePage(this.id)" id="bp4"><a>4</a></li>
+                                    <li onclick="changePage(this.id)" id="bp5"><a>5</a></li>
+                                    <li onclick="changePage(this.id)" id="bp6"><a>6</a></li>
+                                    <li onclick="changePage(this.id)" id="bp7"><a>7</a></li>
+                                    <li onclick="changePage(this.id)" id="bp8"><a>8</a></li>
+                                    <li onclick="changePage(this.id)" id="bp9"><a>9</a></li>
+                                    <li onclick="changePage(this.id)" id="bp10"><a>10</a></li>
+
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="container">
+                    <div class="container" style="width: 1140px">
+                        <div class="row" id="sampleQuestion" >
 
-                        <div class="row" id="sampleQuestion">
                             <!--First Page-->
-                            <div class="col-lg-8 col-md-8" id='firstPage' >
+                            <div class="col-lg-8 col-md-8" id='Page1' >
 
                                 <!-- POST -->
                                 <div class="post beforepagination">
@@ -231,13 +241,15 @@
                                             </div>
                                         </div>
                                         <div class="posttext pull-left">
-                                            <h2 style="font-weight: bold">First Post</h2>
-                                            <p style="color: #3b4249">CHI is coming. So happy.</p>
+                                            <h2 style="font-weight: bold">After many years I finally did it.</h2>
+                                            <p style="color: #3b4249">I finally reported it, when I was a child I was sexually abused.
+                                                I kept quiet and after so many years I've finally decided to report it.
+                                                I'm shaking and I want to cry but I've finally done it</p>
                                         </div>
                                         <div class="clearfix"></div>
                                         <div class="postinfobot">
                                             <!--<p>Replies for the first post</p>-->
-                                            <div class="posted pull-left"><i class="fa fa-clock-o"></i>Posted on 15 hours ago</div>
+                                            <div class="posted pull-left"><i class="fa fa-clock-o"></i>Posted on 3 hours ago</div>
 
                                             <div class="clearfix"></div>
                                         </div>
@@ -253,116 +265,104 @@
                                             <h5 style="font-weight: bold">ionavvda</h5>
                                         </div>
                                         <div class="posttext pull-left">
-                                            <p>Typography helps you engage your audience and establish a distinct,
-                                                unique personality on your website. Knowing how to use fonts to
-                                                build character in your design is a powerful skill, and exploring
-                                                the history and use of typefaces, as well as typogra...</p>
+                                            <p>Good Job! It takes a lot of courage to do something like that and I hope things turn out well for you.</p>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="postinfobot">
 
-                                        <!--<div class="likeblock pull-left">-->
-                                        <!--<a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>10</a>-->
-                                        <!--<a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>1</a>-->
-                                        <!--</div>-->
 
-                                        <!--<div class="prev pull-left">-->
-                                        <!--<a href="#"><i class="fa fa-reply"></i></a>-->
-                                        <!--</div>-->
-
-                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i> Replied on 12
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 3
                                             hours ago</div>
 
-                                        <!--<div class="next pull-right">-->
-                                        <!--<a href="#"><i class="fa fa-share"></i></a>-->
-
-                                        <!--<a href="#"><i class="fa fa-flag"></i></a>-->
-                                        <!--</div>-->
-
                                         <div class="clearfix"></div>
                                     </div>
-                                </div><!-- POST -->
+                                </div>
 
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
 
-
-                                <!-- POST -->
-                                <div class="post">
                                     <div class="topwrap">
                                         <div class="userinfo pull-left">
-                                            <div class="avatar">
-                                                <h5 style="font-weight: bold">uvcnka</h5>
-                                            </div>
-
-                                            <!--<div class="icons">-->
-                                            <!--<img src="images/icon3.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />-->
-                                            <!--</div>-->
+                                            <h5 style="font-weight: bold">teslavon</h5>
                                         </div>
                                         <div class="posttext pull-left">
+                                            <p>
+                                                It's really not easy. I'm really glad that you worked up the courage to finally do it. <br><br>
+                                                It's okay to have a mix of emotions. It'll pass and hopefully you'll feel better and relieved after this. <br><br>
+                                                Care to share what made you finally do it? And how long has it been since?
 
-                                            <blockquote>
-                                                <span class="original">Original Posted by - theguy_21:</span>
-                                                Did you see that Dove ad pop up in your Facebook feed this year? How
-                                                about the Geico camel one?
-                                            </blockquote>
-                                            <p>Toronto Mayor Rob Ford does not have a bigger fan than "Anchorman's"
-                                                Ron Burgundy. In fact, Burgundy wants Ford to be re-elected so much,
-                                                that he agreed to sing the campaign song Brien. The tune in question
-                                                ...</p>
+                                            </p>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="postinfobot">
-
-                                        <!--<div class="likeblock pull-left">-->
-                                        <!--<a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>55</a>-->
-                                        <!--<a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>12</a>-->
-                                        <!--</div>-->
-
-                                        <!--<div class="prev pull-left">-->
-                                        <!--<a href="#"><i class="fa fa-reply"></i></a>-->
-                                        <!--</div>-->
-
-                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : 20
-                                            Nov @ 9:50am</div>
-
-                                        <!--<div class="next pull-right">-->
-                                        <!--<a href="#"><i class="fa fa-share"></i></a>-->
-
-                                        <!--<a href="#"><i class="fa fa-flag"></i></a>-->
-                                        <!--</div>-->
-
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 2
+                                            hours ago</div>
                                         <div class="clearfix"></div>
                                     </div>
-                                </div><!-- POST -->
+                                </div>
+                                <!-- POST -->
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
 
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">Heroato</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                Yay!!! Thanks for standing up for yourself! :D
 
-
-
-
-
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
                             </div>
 
 
                             <!--Second Page-->
-                            <div class="col-lg-8 col-md-8" id="secondPage" style='display:none;'>
+                            <div class="col-lg-8 col-md-8" id="Page2" style='display:none;'>
 
                                 <!-- POST -->
                                 <div class="post beforepagination">
                                     <div class="topwrap">
                                         <div class="userinfo pull-left">
                                             <div class="avatar">
-                                                <h5 style="font-weight: bold">ifnka</h5>
+                                                <h5 style="font-weight: bold">Deadrose</h5>
                                             </div>
                                         </div>
                                         <div class="posttext pull-left">
-                                            <h2 style="font-weight: bold">Second Post</h2>
-                                            <p style="color: #3b4249">DDL is coming. Even happier.</p>
+                                            <h2 style="font-weight: bold">Is anyone there to read this right now? I hope so.
+                                            </h2>
+                                            <p style="color: #3b4249">I had a very rough night tonight. I've been crying slowly for about an hour now.
+                                                I'm actually trying to get some sleep, but there's stuff eating at me. <br>
+
+                                                I got into an argument with my husband. Well, I wouldn't say argument really, but it was a heart wrenching conversation.
+                                                Right now, my husband is 200+ miles away for some Army stuff and won't be home for 2 weeks. He's very stressed about not
+                                                being here because we may be expecting and I have some other stuff going on. <br>
+
+                                                Tonight, his stress got to him and he got very insecure about things. It happens rarely, he's getting help, but tonight,
+                                                I can't stop thinking about it. I've been laying down, thinking about it, reading it over. <br>
+
+                                                I struggle with my own issues, depression being a major one, and I feel so crappy over what happened. I'm beating myself up over it.
+                                                Eating myself alive. I feel like a failed wife. A failed best friend. I'm supposed to be there for him, to help, and I can't. He's
+                                                so far away. I try to over the phone or text, but it doesn't help. I don't know what to do. I'm not suicidal, but I really just wanted
+                                                to vent I guess. My eyes hurt from the amount of crying I've done. Idk when I'll stop, but ik I will eventually. <br>
+
+                                                Anyway, thank you for reading this post. Writing helped a lot, so thank you.</p>
                                         </div>
                                         <div class="clearfix"></div>
                                         <div class="postinfobot">
                                             <!--<p>Replies for the first post</p>-->
-                                            <div class="posted pull-left"><i class="fa fa-clock-o"></i>Posted on 15 hours ago</div>
+                                            <div class="posted pull-left"><i class="fa fa-clock-o"></i>Posted on 5 hours ago</div>
 
                                             <div class="clearfix"></div>
                                         </div>
@@ -375,93 +375,72 @@
 
                                     <div class="topwrap">
                                         <div class="userinfo pull-left">
-                                            <h5 style="font-weight: bold">ionavvda</h5>
+                                            <h5 style="font-weight: bold">salvyg12</h5>
                                         </div>
                                         <div class="posttext pull-left">
-                                            <p>Typography helps you engage your audience and establish a distinct,
-                                                unique personality on your website. Knowing how to use fonts to
-                                                build character in your design is a powerful skill, and exploring
-                                                the history and use of typefaces, as well as typogra...</p>
+                                            <p>Your husband obviously loves you and love him as well, and that is beautiful on its own.
+                                                And you have a baby, the child of the love of your life, so technically hes not far away but
+                                                instead with you embracing your love and warmth. And when your husband comes back you embrace
+                                                his love and warmth</p>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="postinfobot">
 
-                                        <!--<div class="likeblock pull-left">-->
-                                        <!--<a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>10</a>-->
-                                        <!--<a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>1</a>-->
-                                        <!--</div>-->
-
-                                        <!--<div class="prev pull-left">-->
-                                        <!--<a href="#"><i class="fa fa-reply"></i></a>-->
-                                        <!--</div>-->
-
-                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i> Replied on 12
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 5
                                             hours ago</div>
-
-                                        <!--<div class="next pull-right">-->
-                                        <!--<a href="#"><i class="fa fa-share"></i></a>-->
-
-                                        <!--<a href="#"><i class="fa fa-flag"></i></a>-->
-                                        <!--</div>-->
-
                                         <div class="clearfix"></div>
                                     </div>
                                 </div><!-- POST -->
 
+                                <!--POST-->
+                                <div class="post" style="margin-top: 20px;">
 
-
-                                <!-- POST -->
-                                <div class="post">
                                     <div class="topwrap">
                                         <div class="userinfo pull-left">
-                                            <div class="avatar">
-                                                <h5 style="font-weight: bold">uvcnka</h5>
-                                            </div>
-
-                                            <!--<div class="icons">-->
-                                            <!--<img src="images/icon3.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />-->
-                                            <!--</div>-->
+                                            <h5 style="font-weight: bold">snowom</h5>
                                         </div>
                                         <div class="posttext pull-left">
-
-                                            <blockquote>
-                                                <span class="original">Original Posted by - theguy_21:</span>
-                                                Did you see that Dove ad pop up in your Facebook feed this year? How
-                                                about the Geico camel one?
-                                            </blockquote>
-                                            <p>Toronto Mayor Rob Ford does not have a bigger fan than "Anchorman's"
-                                                Ron Burgundy. In fact, Burgundy wants Ford to be re-elected so much,
-                                                that he agreed to sing the campaign song Brien. The tune in question
-                                                ...</p>
+                                            <p>we all cycle through periods of happy and well not happy. you do not need to fix
+                                                it all you need to do is listen we are all human at the end of the day and thus it is
+                                                impossible for us to "fix" everything for our SO but we can try and be supportive but
+                                                don't let you paint yourself into a corner thinking support means you need to fix it
+                                                at most it could just be replying that you love him and you understand so in a few hours
+                                                time he can look at the phone and think damn she does care</p>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="postinfobot">
 
-                                        <!--<div class="likeblock pull-left">-->
-                                        <!--<a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>55</a>-->
-                                        <!--<a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>12</a>-->
-                                        <!--</div>-->
-
-                                        <!--<div class="prev pull-left">-->
-                                        <!--<a href="#"><i class="fa fa-reply"></i></a>-->
-                                        <!--</div>-->
-
-                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : 20
-                                            Nov @ 9:50am</div>
-
-                                        <!--<div class="next pull-right">-->
-                                        <!--<a href="#"><i class="fa fa-share"></i></a>-->
-
-                                        <!--<a href="#"><i class="fa fa-flag"></i></a>-->
-                                        <!--</div>-->
-
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 4
+                                            hours ago</div>
                                         <div class="clearfix"></div>
                                     </div>
-                                </div><!-- POST -->
+                                </div>
+                                <!--POST-->
 
+                                <!--POST-->
+                                <div class="post" style="margin-top: 20px;">
 
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">salvyg12</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>He just misses you, and you miss him. Just think about how hard you will
+                                                hold him and he comes home. Think about his ear against your belly and
+                                                all the delicious food you can eat together</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 4
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!--EPOST-->
 
 
 
@@ -469,19 +448,312 @@
                             </div>
 
                             <!--Third Page-->
-                            <div class="col-lg-8 col-md-8" id="thirdPage" style='display:none;'>
+                            <div class="col-lg-8 col-md-8" id="Page3" style='display:none;'>
+                                <!-- POST -->
+                                <div class="post beforepagination">
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <div class="avatar">
+                                                <h5 style="font-weight: bold">negahk</h5>
+                                            </div>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <h2 style="font-weight: bold">Is it possible to function without antidepressants?
+                                            </h2>
+                                            <p style="color: #3b4249">Hey guys, so I really need some insight from others. As the title says,
+                                                I would like to know about anyone’s experiences with antidepressants and (if possible) those who stopped using them.
+
+                                                A lil of a backstory of myself, my entire life I’ve never really known a life where I appreciated myself, I always thought,
+                                                well, not being here was the better option. As I grew older and honestly learned about mental illness, I found support in
+                                                different places to which brings me to where I am now. It was a PROCESS let me tell you, but now I can genuinely say I feel better,
+                                                I’ve been able to experience different things in my life that I never considered possible for me, I guess. I know a big influence
+                                                to this new (perspective?) in my life is my meds, I know they have helped me a lot, but is it possible to feel this way without them?
+                                                If you are living without them, how’s it going? I really appreciate any thoughts, and thanks for making it all the way to the end! ❤️</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="postinfobot">
+                                            <!--<p>Replies for the first post</p>-->
+                                            <div class="posted pull-left"><i class="fa fa-clock-o"></i>Posted on 5 hours ago</div>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+
+                                </div><!-- POST -->
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">blenul</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>This is really interesting to me. My first bout with antidepressants/antianxiety medication was 4 years ago now,
+                                                and it's been an on/off relationship. About a year ago I had a test that concluded I didn't have a the proper
+                                                liver enzyme to process most medication. I've never enjoyed the feeling of going and testing medication,
+                                                and it's always been something I could potentially use to abuse myself with. <br><br>
+
+                                                So! With that said, I was surprise that when I had stopped entirely taking medication about six-seven months ago
+                                                that I was okay. I went through three major life events, and while I felt like crap, I still was here.
+                                                I'm just now getting my life back together, but I wouldn't be opposed to trying to get onto something
+                                                to try preserving the progress I made. <br><br>
+
+                                                That being said, if you are doing well, I'd advise the whole, "If it ain't broke, don't fix it" mentality.
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 5
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div><!-- POST -->
+
+
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">Azudra</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>I've stopped taking my antidepressants a few weeks ago. My life sucked,
+                                                I had zero energy and a single day of work was enough to make me want to die.
+                                                Now without them I seem to have much more energy and I feel less tired. But as
+                                                this will be my first day at work after two weeks off I'll see if I'm back to "I
+                                                want to die" this afternoon.
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 3
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">musica</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>I have been on and off a couple times. Thankfully while on them I could
+                                                learn and teach myself how to create joy and accept it from others without
+                                                the help of drugs. However I’m not perfect and should honestly talk with my doctor again.
+                                                It’s possible to function without antidepressants, but everyone is different
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <!--<div class="post">-->
+                                    <!--<div class="topwrap">-->
+                                        <!--<div class="userinfo pull-left">-->
+                                            <!--<div class="avatar">-->
+                                                <!--<h5 style="font-weight: bold">uvcnka</h5>-->
+                                            <!--</div>-->
+
+                                            <!--&lt;!&ndash;<div class="icons">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<img src="images/icon3.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                        <!--</div>-->
+                                        <!--<div class="posttext pull-left">-->
+
+                                            <!--<blockquote>-->
+                                                <!--<span class="original">Original Posted by - theguy_21:</span>-->
+                                                <!--Did you see that Dove ad pop up in your Facebook feed this year? How-->
+                                                <!--about the Geico camel one?-->
+                                            <!--</blockquote>-->
+                                            <!--<p>Toronto Mayor Rob Ford does not have a bigger fan than "Anchorman's"-->
+                                                <!--Ron Burgundy. In fact, Burgundy wants Ford to be re-elected so much,-->
+                                                <!--that he agreed to sing the campaign song Brien. The tune in question-->
+                                                <!--...</p>-->
+                                        <!--</div>-->
+                                        <!--<div class="clearfix"></div>-->
+                                    <!--</div>-->
+                                    <!--<div class="postinfobot">-->
+
+                                        <!--<div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : 20-->
+                                            <!--Nov @ 9:50am</div>-->
+                                        <!--<div class="clearfix"></div>-->
+                                    <!--</div>-->
+                                <!--</div>&lt;!&ndash; POST &ndash;&gt;-->
+
+                            </div>
+
+                            <!--4th Page-->
+                            <div class="col-lg-8 col-md-8" id='Page4' style='display:none;' >
 
                                 <!-- POST -->
                                 <div class="post beforepagination">
                                     <div class="topwrap">
                                         <div class="userinfo pull-left">
                                             <div class="avatar">
-                                                <h5 style="font-weight: bold">ifnka</h5>
+                                                <h5 style="font-weight: bold">kkmsuf</h5>
                                             </div>
                                         </div>
                                         <div class="posttext pull-left">
-                                            <h2 style="font-weight: bold">Third Post</h2>
-                                            <p style="color: #3b4249">Good Good Study, Day Day Up.</p>
+                                            <h2 style="font-weight: bold">Anyone else's depression made worse by the way the world is?</h2>
+                                            <p style="color: #3b4249">I'm constantly so angry that I have to do all these things i dont
+                                                want to do just so i can continue living, which I'm not even interested in doing.
+                                                I'm angry I'm in a major that I hate and that the fields I was interested in make so
+                                                little money that the field isnt even worth pursuing imo. I'm angry I'm going to have
+                                                to work +8 hours a day 5 days a week in a job I dont like, I'm angry that i have to
+                                                spend my mornings getting ready and driving to a job i won't like. Ill get shit benefits
+                                                and 10 days vacation a year, so for the next 30 years I get to be miserable with the exception
+                                                of 10 days out of the year when I can travel which is the only thing I'm interested in anymore.
+                                                Probably what makes me the most angry is seeing all these talentless people on YouTube making
+                                                millions for being morons while I have to go to school for 4 years to even make a livable wage
+                                                and it pisses me off.  I get the whole "life isnt fair" thing but I can't stop being angry about
+                                                it and everyday it gets worse.</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="postinfobot">
+                                            <!--<p>Replies for the first post</p>-->
+                                            <div class="posted pull-left"><i class="fa fa-clock-o"></i>Posted on 8 hours ago</div>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+
+                                </div><!-- POST -->
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">robyn23</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>That is basically the reason for my depression. Still not sure if I am actually
+                                                depressed, but I have this constant anger for society and the way things are.
+                                                I want time, money, so I can do things that I want to do. The world wouldn't be
+                                                so bad then. Why does shit have to be like this? It never ends.</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 8
+                                            hours ago</div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">dsjafkj</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                I don't fucking get it either man. <br><br>
+
+                                                I don't like doing all the things im "supposed " to do, but to succeed in life I need to do those things. It's not in a "this sucks but gets me to a better place" way, I'll do shitty stuff and fun stuff, but none of it is very stimulating, even the good parts, they don't weigh out the bad. So I just suffer untill I die? Guess so lolz.<br><br>
+
+                                                Life isn't fair and people are content with that but I'm not. It sometimes feels like everyone is just lying to themselves to get by.
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 7
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">yhiva</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                Dude literally 95% of my problems would be fixed if I got a good 10-20k sum. Now I’m starting to think if I could actually afford food despite all the work I’ve done and I felt like society was trying to help me and genuinely cared about my positive net contribution and wanted to see me to continue being a productive member, I wouldn’t want to just throw everything away and give up. <br><br>
+
+                                                I used to work assembly line moving and packing 50lb boxes literally all day in a chicken plant with overtime. I was exhausted as fuck all the time not to mention all the severe soreness, repetitive strain injuries, biohazards, even a knee infection that could’ve gotten bad. I even got electrocuted a couple times and almost got fingers broken, as a guitarist that’s fun. Insurance, bills, medical, could barely even afford rent anyway. I had to pretend the most excruciating muscle I’ve ever pulled, in my shoulder/arm, didn’t hurt so I wouldn’t lose my job. Now I get debilitating migraines! (Which I call a Job-stopper!) and have severe depression which causes a feedback loop so all this started to topple because there are some days that I’m just not going to come in, which makes it even worse, so what am I supposed to do because I can’t “suck it up?” Who the fuck would be cool with that? I wish I could work like I used to but something changed and I can’t. If this made sense to me and I could fix it then I fucking would and I’d get my life back but it’s not easy, otherwise it wouldn’t be a problem now would it? I really wonder how the actual fuck anyone like me gets anything done, and how to survive with what society expects of you at that point. Oh okay I’ll just die then. Fuck you too. I just feel like the only option I’m given is to endure my agonies and work until my loved ones are gone so I can die seeking desperate relief. Fuck that shit. Even the damn factory was more understanding than other jobs, it got to where I skipped half the days of work sometimes and they never fired me because I worked that fucking hard, I was so valuable to that company that they literally just begged me to show up and gave me hugs when I did. Felt very good at times like that, at least I’m not losing my job and they understand. That was a pocket sense of a community that I think we desperately need and are moving away from as a culture perhaps. Support, like when someone in the village is depressed every neighbor comes together with song and dance and they find them a new purpose and ensure they can reintegrate them into society. In the US you take potentially dangerous drugs that don’t work for half of all people to say the least, and you talk to people you can’t touch about bad things that have happened to you in a small room. I get it but for me it’s not enough, just makes me more poor and angry that there’s no legit way for me to feel better without losing more resources. Well eventually I couldn’t even keep that factory shit up. Restaurants have been far less forgiving. “You gotta come in if ur scheduled u kno” motherfucker I know that, but I’m not coming in some days because I’m throwing up and useless, so I just deserve to get fired and die then because I can’t 100% reliably come into any job anymore? And this is all my fault because any unemployed person is just lazy? How is anyone still working? Nobody’s allowed to get sick or have a fucking day to grieve a horrible tragedy? Because it was relatively fucking easy working in the factory feeling a false sense of security getting that big paycheck every week but I don’t understand how anyone can live like this because at the end of the day it’s not enough. We get sick and die, all of which is paid for. Most of our bills are for essentials and they bankrupt us. Most people work paycheck to paycheck in the us and I am appalled by that, how tf is that acceptable? I remember relating to forest dwellers in Indonesia I think (maybe wrong), they were saying “In the forest we had everything we needed. We had abundance and lived in harmony with nature. Now we only worry about money, and it is so hard to get. We struggle all the time now.” I’ve worked my ass off and all I feel I’ve gotten for it is depressed, into a hole of despair that I’ve spent my life wary of and then used all my savings trying to get out of. Now it’s like I’m at rock bottom but somehow worse than when I started. I can’t climb up the ladder because all the bottom rungs are gone and I’m too broken to jump anymore. I have lost faith in the system of “work hard and you’ll do alright in life” because I’ve tried to do literally everything I could to build a live worth living and instead I feel like I’ve been not only spat at in my face, but society kicks me in the teeth while I’m down asking for help and says it’s not good enough. I feel I have done everything right and yet I am punished for excelling. I often feel like I have discovered to my horror that a machine-like matrix of self-justifying cultural lies has captured me and enslaved me as a pack mule, and I am forced against my will to conform, or to suffer as myself and die. The truth is that I still work very hard even if our culture refuses to acknowledge it as real work. I for example compose lengthy complex songs, make paintings in many styles, all kinds of art and other tangible things that I know are valuable to people and I could even live off it if I suffered long enough to get the ball rolling. I have decided that I will never work in the way these people want me to because I can never be anything other than what I am. I will suffer to do MY work. I think it is unreasonable to expect someone to cut off their edges to conform if it would destroy them. I think of the picture with the line of different animals in front of a tree with the monkey, standing next to the fish in a bowl. And the test for “fairness” is that everyone climbs the same tree. The monkeys are like fuck yeah and the fish obviously realize this is bullshit and unfair to them but this is a climber’s world and if they were ‘reasonable’ they’d adapt. Well if we’re honest with ourselves we know there are different measuring sticks for success and we can’t expect everyone to live exactly the same way. Everyone has strengths and weaknesses that are unique and benefit society in completely different ways and it would be cool if the system encouraged us to focus on our strengths like funneling into technical schools or whatever. (Rather than “if you can’t fly you’re fucked but you can only blame your own genetics.”) Schooling especially should ideally function like a sorting system to help people find their best fit into society, rather than making everyone chase and worry about numbers and marks and that’s it. So much to talk about, hope this isn’t too disjointed or confusing to read. I relate to a lot and there’s so much to say.
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 6
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">nzbvbf</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                Not only exactly this, but I KNOW my depression is worse by social media/technology advancements. I have to use social media for a business I own, so deleting it is not an option. I hate always carrying a phone on me and pointlessly scrolling. I just want to throw it away and forget everything I’ve known about the internet being at my fingertips.
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 6
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <!--5th Page-->
+                            <div class="col-lg-8 col-md-8" id='Page5' style='display:none;'>
+
+                                <!-- POST -->
+                                <div class="post beforepagination">
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <div class="avatar">
+                                                <h5 style="font-weight: bold">Merlock</h5>
+                                            </div>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <h2 style="font-weight: bold">It's the boredom that's killing me
+                                            </h2>
+                                            <p style="color: #3b4249">One of the reasons it took me so long to clue into the fact that I had depression is because for me depression isn't sadness or anger (although it can be that too), it's boredom. I remember being a little girl and telling my mother I was bored to which she would often offer suggestions of what I could do and I'd feel bereft because bored to me didn't mean not having anything to do, it was that I wasn't interested in anything, and why didn't my mother understand this?<br><br>
+
+                                                I'm still bored. I'm so bored it's killing me.<br><br>
+
+                                                While I was in school I was able to tell myself that my situation was temporary, that it would get better, that I'd get a job I actually enjoyed, a place of my own that I would actually be happy to live in and look after, hobbies, perhaps a life partner and a cat that I would enjoy spending time with. I tried to fool myself into thinking that I'd suddenly become interested in things, that I wouldn't mind going to work, that I'd actually want to take care of myself and my things, that I'd actually be interested enough in other people to want to make friends and have a romantic relationship, but now all I can see before me is an endless expanse of boredom.<br><br>
+
+                                                Work is boring, chores are boring, people are boring, life is boring, and I just want it all to end. I'm not a thrill seeker (I'm too anxious for that), but even if you were to ask me how I felt about vacations or amusement parks my answer would be "It was boring" could scare me half to death but I've been scared half to death a thousand times and that makes it boring.<br><br>
+
+                                                I somehow feel that I've done everything there is to do in life even though there is obviously a lot I haven't done. But I feel so numb to it all it feels like it doesn't matter, I can predict how something like marriage or retirement or kids would make me feel: bored, so why does it matter if I actually experience these things or not?<br><br>
+
+                                                It's funny in a sardonic sort of way that the cure for this boredom, this anhedonia, is to do the things I used to enjoy, but I don't remember ever enjoying something, depression hit me too early in life for me to even develop hobbies or discover things I liked. It seems like such a silly reason to contemplate killing yourself over, to end it because you're bored, but if you think of life in terms of a video game is that not what you do? If you don't like the game you quit, if you're bored with it you probably don't like it. So why am I still playing?<br><br>
+                                            </p>
                                         </div>
                                         <div class="clearfix"></div>
                                         <div class="postinfobot">
@@ -499,98 +771,609 @@
 
                                     <div class="topwrap">
                                         <div class="userinfo pull-left">
-                                            <h5 style="font-weight: bold">ionavvda</h5>
+                                            <h5 style="font-weight: bold">ss-squad</h5>
                                         </div>
                                         <div class="posttext pull-left">
-                                            <p>Typography helps you engage your audience and establish a distinct,
-                                                unique personality on your website. Knowing how to use fonts to
-                                                build character in your design is a powerful skill, and exploring
-                                                the history and use of typefaces, as well as typogra...</p>
+                                            <p>Probably because you're bound to your biology and your self-preservation instinct is still dominant. At least that's what I think is the case with me.<br><br>
+
+                                                The boredom's killing me as well. I might enjoy something for a few days at best but whatever interest there was quickly fades and feels forced and artificial. Each day that passes feels terribly empty and unnecessary. I'm even starting to get bored of pot which has been my only relief for the past months lol. I think a good question that summarizes all of this is simply "why?" (not enough energy/motivation to come up with the rest)</p>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="postinfobot">
 
-                                        <!--<div class="likeblock pull-left">-->
-                                        <!--<a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>10</a>-->
-                                        <!--<a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>1</a>-->
-                                        <!--</div>-->
 
-                                        <!--<div class="prev pull-left">-->
-                                        <!--<a href="#"><i class="fa fa-reply"></i></a>-->
-                                        <!--</div>-->
-
-                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i> Replied on 12
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 14
                                             hours ago</div>
-
-                                        <!--<div class="next pull-right">-->
-                                        <!--<a href="#"><i class="fa fa-share"></i></a>-->
-
-                                        <!--<a href="#"><i class="fa fa-flag"></i></a>-->
-                                        <!--</div>-->
 
                                         <div class="clearfix"></div>
                                     </div>
-                                </div><!-- POST -->
+                                </div>
 
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
 
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">fnmabf</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                I understand as a drug user who is now on probation. My brain is fried. This particular Reddit is a great distraction though. Been over a year and I still got at least one year to go. Could be more if my PO so wills it.
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 10
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">vanlva</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                https://amp.mindbodygreen.com/articles/5-things-everyone-should-know-about-acceptance--13730 <br><br>
+
+                                                https://www.psychologytoday.com/us/blog/your-emotional-meter/201708/important-tips-how-let-go-and-free-yourself
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 9
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                            </div>
+
+                            <!--6th Page-->
+                            <div class="col-lg-8 col-md-8" id='Page6' style='display:none;'>
 
                                 <!-- POST -->
-                                <div class="post">
+                                <div class="post beforepagination">
                                     <div class="topwrap">
                                         <div class="userinfo pull-left">
                                             <div class="avatar">
-                                                <h5 style="font-weight: bold">uvcnka</h5>
+                                                <h5 style="font-weight: bold">bvjvjaf</h5>
                                             </div>
-
-                                            <!--<div class="icons">-->
-                                            <!--<img src="images/icon3.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />-->
-                                            <!--</div>-->
                                         </div>
                                         <div class="posttext pull-left">
+                                            <h2 style="font-weight: bold">Need advice</h2>
+                                            <p style="color: #3b4249">Hi I’ve never learned how to talk about my feelings but I want to, I just don’t know where to start and how to not feel like i look like I’m just begging for attention when I genuinely need to talk it all out and to work things down inside of me. How can I change this? How can I not feel so awkward about it all? Where’s a good place to start or is it kinda just to late and I’m stuck like chuck? Please help, yours truly, a sad individual. Thank you</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="postinfobot">
+                                            <!--<p>Replies for the first post</p>-->
+                                            <div class="posted pull-left"><i class="fa fa-clock-o"></i>Posted on 20 hours ago</div>
 
-                                            <blockquote>
-                                                <span class="original">Original Posted by - theguy_21:</span>
-                                                Did you see that Dove ad pop up in your Facebook feed this year? How
-                                                about the Geico camel one?
-                                            </blockquote>
-                                            <p>Toronto Mayor Rob Ford does not have a bigger fan than "Anchorman's"
-                                                Ron Burgundy. In fact, Burgundy wants Ford to be re-elected so much,
-                                                that he agreed to sing the campaign song Brien. The tune in question
-                                                ...</p>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+
+                                </div><!-- POST -->
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">buzzion</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>is there anybody in your life that you can trust/confide in to talk about how you’ve been feeling? <br><br>
+
+                                                they may not be able to do much to help, but it’s a small step in a big direction, learning how to express how you feel.</p>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="postinfobot">
 
-                                        <!--<div class="likeblock pull-left">-->
-                                        <!--<a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>55</a>-->
-                                        <!--<a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>12</a>-->
-                                        <!--</div>-->
 
-                                        <!--<div class="prev pull-left">-->
-                                        <!--<a href="#"><i class="fa fa-reply"></i></a>-->
-                                        <!--</div>-->
-
-                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : 20
-                                            Nov @ 9:50am</div>
-
-                                        <!--<div class="next pull-right">-->
-                                        <!--<a href="#"><i class="fa fa-share"></i></a>-->
-
-                                        <!--<a href="#"><i class="fa fa-flag"></i></a>-->
-                                        <!--</div>-->
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 18
+                                            hours ago</div>
 
                                         <div class="clearfix"></div>
                                     </div>
+                                </div>
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">nijog94</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                you can try talking to a diary first
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 15
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">Oslzy</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                Honestly the best place to go is your doctor. They will set you up with a therapist who will listen and talk to you. And if you are in need of it will prescribe you medication to help. I need to do this myself but i feel awkward asking for help and am scared they will think im lying.
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 14
+                                            hours ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                            </div>
+
+                            <!--7th Page-->
+                            <div class="col-lg-8 col-md-8" id='Page7' style='display:none;'>
+
+                                <!-- POST -->
+                                <div class="post beforepagination">
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <div class="avatar">
+                                                <h5 style="font-weight: bold">randozh</h5>
+                                            </div>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <h2 style="font-weight: bold">I finally got the call.
+                                            </h2>
+                                            <p style="color: #3b4249">So my mom has been battling cancer for the past couple of years and is losing to it. We tried everything. Chemo and treatment. Nothing was working. So she decided that she was done fighting and went into hospice in January. I just got the call that it was almost her time. The hospice nurses suggested that all of her children visit her. <br><br>
+
+                                                She has been in hospice for so long. It was a waiting game for my family and she was suffering for so long. I knew this was happening but it still caught me off guard. I don’t know. I’m just numb and speechless right now.<br><br>
+
+                                                Thanks for reading.</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="postinfobot">
+                                            <!--<p>Replies for the first post</p>-->
+                                            <div class="posted pull-left"><i class="fa fa-clock-o"></i>Posted on 1 day ago</div>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+
                                 </div><!-- POST -->
 
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">Whomto</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>I'm so sorry to hear this. I lost my much loved grandad to this in February, with no help for him. I can only imagine how awful this would be to see my mum like this. Much love</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
 
 
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1
+                                            day ago</div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">menton3</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                My sympathies here. My close friend's death came pretty quick and threw us all for a loop. Just remember everyone is going to feel the same way. Don't feel like you have to be strong or Stoic. Just feel what you're feeling and let the others know you love them.
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1 day ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">reldan</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                Oh my goodness. I am so sorry. My mom is in inpatient hospice care as of last night and they don’t think it will be too much longer. Her ovarian cancer has come back with a vengeance and has metastasized throughout her body.<br><br>
+
+                                                She fought the cancer 3 years ago with a full hysterectomy, chemotherapy, lost her hair, the whole 9, and went into remission for a year.<br><br>
+
+                                                Then, as is coming with this type of cancer, it came back with a vengeance. :/<br><br>
+
+                                                I’m numb too, speechless, sometimes crying, sometimes feeling at peace that she will eventually be at peace. It’s...just a lot. Hang in there!<br><br>
+
+                                                I am going to see her in a few minutes at hospice. I can’t imagine what your family has gone through dealing with your mom in hospice for weeks on end.<br><br>
+
+                                                Hugs. My thoughts are with you more than you know! xo<br><br>
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1
+                                            day ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">knelav</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                I’m truly sorry ☹️ Death is always such a shock. So is cancer and it’s good she isn’t suffering any more. Just try to remember what she would have wanted for you. As every mother wishes their child to be happy.
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1
+                                            day ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">Sultan</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                My condolences to you friend. I know exactly what you feel. In 2015, some Thursday night, I had a good nice long talk with my father about life - one of the most meaningful conversations I've had with my dad. We spent the entire night mixing his kareoke tracks, and went to sleep after praying. He also spend that night talking to mom, cuddling my little 7 year old brother and so on.<br><br>
+
+                                                Next morning, I woke up to my mom screaming, we got a car and rushed him to the ER and all; just for one nurse to come and tell me he is okay. Happiness filled me. And another came a minute later and told me he has passed away.<br><br>
+
+                                                As a 16 year old back then, i was struck by numbness and confusion - it was horrible and I had no one to really lean on to. My entire family was a wreck, so I had to "man-up", and comfort my mother and brother, even the eldest one. (I am the second.)<br><br>
+
+                                                All the pressure was on me because nothing was getting done, so after I helped mom - things got better gradually. It's been 4 years, and I miss my dad so much still. I'm 20 now, and I wish he could've seen me as an adult.<br><br>
+
+                                                I hope this helps you remember you are not alone - and remember, you mother loves you alot.<br><br>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1
+                                            day ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
 
 
 
                             </div>
+
+                            <!--8th Page-->
+                            <div class="col-lg-8 col-md-8" id='Page8' style='display:none;'>
+
+                                <!-- POST -->
+                                <div class="post beforepagination">
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <div class="avatar">
+                                                <h5 style="font-weight: bold">notki</h5>
+                                            </div>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <h2 style="font-weight: bold">Does anyone else get random waves of depression?
+                                            </h2>
+                                            <p style="color: #3b4249">Does anyone else experience this?? I could be hanging out with my friends or something and actually be having a good time. Then for a moment we’ll maybe go silent and stop talking for a second and all of a sudden I get a random wave of hopelessness and sadness. I can’t even explain how it feels but it makes me become so much more alert in that moment and I sort of feel really disconnected. I’ll look around at all these strangers just getting on with their lives and I wonder how they view life and if they’re happy etc. It usually passes quite quickly but the feeling is so strong that I always notice when it happens. I also noticed that whenever it does happen it kind of ruins the rest of my day because I end up feeling really hopeless and disconnected and it makes me want to die even more than I already do. I don’t know if that made sense at all but everyone I’ve ever asked had never related, so do any of you guys relate?</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="postinfobot">
+                                            <!--<p>Replies for the first post</p>-->
+                                            <div class="posted pull-left"><i class="fa fa-clock-o"></i>Posted on 1 day ago</div>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+
+                                </div><!-- POST -->
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">xidkx</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>It happens way too often for me. I just turned 18 and had a birthday party with my family. While they were singing, I literally wanted to die and just felt so disconnected. I was surrounded by love I guess, but I didn't feel anything but numbness. I just wanted to die in that moment bc of my random waves of sadness. It sucks being depressed lmao</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+
+
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1
+                                            day ago</div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">fnkab</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                Yes, it happens to me sometimes. You are not alone in that. I’ll be out having fun and then I’ll just be done and need to go. I find comfort knowing the feeing will pass.
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1 day ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">455_v8</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                For me, it's kinda the opposite.. I have random wawes of (unexplainable) happiness, like 20-30 minutes, when I don't even remember I'm depressed, I suddenly have these plans, goals, etc, then I go back to my usual low mood. And then I imagine a lot of people life their whole life the way I felt in that 20-30 minutes which is so unfair..
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1
+                                            day ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                            </div>
+
+                            <!--9th Page-->
+                            <div class="col-lg-8 col-md-8" id='Page9' style='display:none;'>
+
+                                <!-- POST -->
+                                <div class="post beforepagination">
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <div class="avatar">
+                                                <h5 style="font-weight: bold">Wolfrag</h5>
+                                            </div>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <h2 style="font-weight: bold">I keep getting depressed because I look creepy.</h2>
+                                            <p style="color: #3b4249">So, heres the thing, I've always had depression, but teh thing that really gets me is the fact that everyone including myself goes out of their way to talk about how ugly and creepy looking I am.<br><br>
+
+                                                Normally I try to shrug it off, but one time I was with my brother and my nephew, who's really young, and my brother went off for a bit to go take care of something. So I'm playing with my nephew, we were at a water park, and we were having a good time. Next thing I know a security guard comes up to me and starts asking me questions, turns out some woman called him over and said that some strange guy was playing with some other guys kid, and she reported me because I looked creepy.<br><br>
+
+                                                My brother came back and explained to the security guard that I was just playing with my nephew. But I was really upset. The security guard actually went over to the woman who reported me, ad told me I was the boys uncle, and she tried to apologize, but I just ignored her and went home, I was just so sad and hurt that someone would take me playing with my nephew as someone who was a creeper.<br><br>
+
+                                                I keep in shape, I try to be as friendly as possible, but people still judge me because of my face to the point where I'm afraid to have a relationship, I'm afraid of making friends, all I do is go to work, go to the gym, and do what I want to do by myself, I'll take vacations alone, but I just feel upset that everyone sees me as being unapproachable.</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="postinfobot">
+                                            <!--<p>Replies for the first post</p>-->
+                                            <div class="posted pull-left"><i class="fa fa-clock-o"></i>Posted on 1 day ago</div>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+
+                                </div><!-- POST -->
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">elpoba</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>You write as a kind person with a sound mind. Just remember that even Sartre had game. Diego Rivera dated very pretty women. What happened was an unfortunate event. I always smile to every customer at work so they know no matter what they look like they are people deserving of acknowledgement, I do it especially to those that look insecure of their looks. A lot of ugly people do well in life, and beauty fades. I don’t think Steve Buscemi is ugly, for example.</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+
+
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1 day ago</div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">lemonc</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                It’s the perception of what we think is attractive. Beauty standards nowadays push what’s standard to be unacceptable. Plz don’t push yourself too much. It’s takes a lot of work to finally realize your true worth, and once you do, physical appearance won’t bother you an inch.
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1 day ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">Ivava</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                Start tattooing your face. It helps some people.
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1
+                                            day ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                            </div>
+
+                            <!--10th Page-->
+                            <div class="col-lg-8 col-md-8" id='Page10' style='display:none;'>
+
+                                <!-- POST -->
+                                <div class="post beforepagination">
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <div class="avatar">
+                                                <h5 style="font-weight: bold">Adambr</h5>
+                                            </div>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <h2 style="font-weight: bold">I feel like I've been left behind in life...</h2>
+                                            <p style="color: #3b4249">I'm 17 and in highschool and I feel like all my friends have left me in their dust. I have always struggled with school and I am now in co-taught classes but still struggle while all my friends plan to get out early because of their flawless grades. They all have lots of friends and girlfriends meanwhile I am afraid to talk to girls and struggle to make new friends. I always suggest we should hang out outside of school and they say okay but something always "comes up". I just feel like they let me tag along through pity or something. Also my parents only ever talk to me about work or grades and never anything else, and my dad only really talks to me when I legally have to go to his house for a weekend and even then he only sits in his room and I only see him once or twice the entire weekend. I have also noticed that my step dad has been whispering crap about me behind my back to my sisters. I have been suicidal several times in my life but never had the balls to go to my parents about it because it would feel weird having a deep conversation with them. The only reason I'm still alive today is because of my cat, he is the only one that gives me attention and shows me love anymore and he is getting old. I don't know what I'll do when he passes. Even worse I have no desire for any line of work and fear for my future. I dont really know what I'll get out of posting here but I just thought I might give it a shot. If anyone has any suggestions for anything please let me know.</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="postinfobot">
+                                            <!--<p>Replies for the first post</p>-->
+                                            <div class="posted pull-left"><i class="fa fa-clock-o"></i>Posted on 1 day ago</div>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+
+                                </div><!-- POST -->
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">Spqueen</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>I would suggest Join a group outside of school. and if you’re in to Anime you can go to Conventions and meet good people and make friends. Hope you’ll feel better.</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+
+
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1 day ago</div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">Hetego</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                When I go to my moms on the weekend (basically her bfs house but she lives in it even though she has her own house) she just sits on the patio, sometimes checks on me, and that’s it. So yea, can kinda relate to the parents not talking to you much thing
+
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1 day ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                                <!--&lt;!&ndash; POST &ndash;&gt;-->
+                                <div class="post" style="margin-top: 20px;">
+
+                                    <div class="topwrap">
+                                        <div class="userinfo pull-left">
+                                            <h5 style="font-weight: bold">Ithero</h5>
+                                        </div>
+                                        <div class="posttext pull-left">
+                                            <p>
+                                                Dude, when you're 17 or 18, all of your friends leave you. That's natural. Your life is going to get much better into your 20's. As soon as I was 21, I left home and just moved thousands of miles away. No plans. Almost no money. Best choice I ever made. That day is coming for you soon. Don't end it yet.
+                                            </p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="postinfobot">
+                                        <div class="posted pull-left"><i class="fa fa-clock-o"></i>Replied on 1
+                                            day ago</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- POST -->
+                            </div>
+
                         </div>
 
                     </div>

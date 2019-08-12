@@ -5,6 +5,8 @@ var pre_click_count = []; // To store the click event.
 var next_click_count = [];
 var url = 'http://127.0.0.1:5000';
 
+var questionNumber =1;
+
 function getPy() {
 //     // const pyOut = 'Hello word';
 //     // console.log(pyOut);
@@ -77,6 +79,38 @@ function showResult(){
 }
 
 
+function changeQuestion() {
+    if(questionNumber == 2) {
+        document.getElementById("OP-name").value = 'jenava';
+        document.getElementById("OP-title").value = 'The only emotions I feel anymore are anger and sadness.';
+        document.getElementById("OP-content").value = 'Even minor inconveniences either make me incredibly angry or incredibly sad.';
+    }
+    else if (questionNumber == 3) {
+        document.getElementById("OP-name").value = 'cjiofne';
+        document.getElementById("OP-title").value = 'Does anyone else feel like being themselves takes effort';
+        document.getElementById("OP-content").value = 'I just, feel I like trying to be anything at all like how ' +
+            'I was before this all started is such a effort. I’ve become so bland and apathetic about anything and if I want' +
+            ' anyone to like me I have to put on like this fake version of myself that’s what they’re used to. But it takes so' +
+            ' much energy out of me that after a day of doing it I have to not see anyone for a few days to recover.';
+    }
+    else {
+        //pass
+    }
+}
+
+// function changeDefaultReply() {
+//     if (questionNumber == 2) {
+//         document.getElementById("reply").placeholder = 'Thank you for your answer in task 1! What are your thoughts  ';
+//     }
+//     else if (questionNumber == 3) {
+//
+//     }
+//     else {
+//         document.getElementById("reply").value = 'Thank you! You have finished all the tasks! Please inform the researcher.';
+//     }
+// }
+
+
 function submit_one(){
     // console.log('hahah')
     var sendVar = document.getElementById("reply").value;
@@ -102,6 +136,10 @@ function submit_one(){
         document.getElementById("reply").value = 'Thank you! You have finished the current task! Please inform the researcher.';
         //Refresh the post, and the reply box.
         //Coding here
+        // Change question and change reply in the blank table
+        questionNumber ++;
+        changeQuestion();
+        // changeDefaultReply();
     }
     };
     http.send(final_com);
@@ -128,39 +166,144 @@ function next_rec(){
 }
 
 
-function changePage1(){
-    var secondPage = document.getElementById('secondPage');
-    var firstPage = document.getElementById('firstPage');
-    var thirdPage = document.getElementById('thirdPage');
-    secondPage.style = "display: none";
-    firstPage.style = "display: inline";
-    thirdPage.style = "display: none";
-    firstPage.className = "col-lg-8 col-md-8";
-    secondPage.className = "col-lg-8 col-md-8";
-    thirdPage.className = "col-lg-8 col-md-8";
+
+
+function changePage(id){
+    var page1 = document.getElementById('Page1');
+    var page2 = document.getElementById('Page2');
+    var page3 = document.getElementById('Page3');
+    var page4 = document.getElementById('Page4');
+    var page5 = document.getElementById('Page5');
+    var page6 = document.getElementById('Page6');
+    var page7 = document.getElementById('Page7');
+    var page8 = document.getElementById('Page8');
+    var page9 = document.getElementById('Page9');
+    var page10 = document.getElementById('Page10');
+    var pageList = new Array(page1, page2, page3, page4, page5, page6, page7, page8, page9, page10);
+    var count = pageList.length;
+    switch (id) {
+        case "bp1":
+            for(var item in pageList) {
+                if (pageList[item] == page1) {
+                    pageList[item].style = "display: inline";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+                else {
+                    pageList[item].style = "display: none";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+            }
+            break;
+        case "bp2":
+            for(var item in pageList) {
+                if (pageList[item] == page2) {
+                    pageList[item].style = "display: inline";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+                else {
+                    pageList[item].style = "display: none";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+            }
+            break;
+        case "bp3":
+            for(var item in pageList) {
+                if (pageList[item] == page3) {
+                    pageList[item].style = "display: inline";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+                else {
+                    pageList[item].style = "display: none";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+            }
+            break;
+        case "bp4":
+            for(var item in pageList) {
+                if (pageList[item] == page4) {
+                    pageList[item].style = "display: inline";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+                else {
+                    pageList[item].style = "display: none";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+            }
+            break;
+        case "bp5":
+            for(var item in pageList) {
+                if (pageList[item] == page5) {
+                    pageList[item].style = "display: inline";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+                else {
+                    pageList[item].style = "display: none";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+            }
+            break;
+        case "bp6":
+            for(var item in pageList) {
+                if (pageList[item] == page6) {
+                    pageList[item].style = "display: inline";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+                else {
+                    pageList[item].style = "display: none";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+            }
+            break;
+        case "bp7":
+            for(var item in pageList) {
+                if (pageList[item] == page7) {
+                    pageList[item].style = "display: inline";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+                else {
+                    pageList[item].style = "display: none";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+            }
+            break;
+        case "bp8":
+            for(var item in pageList) {
+                if (pageList[item] == page8) {
+                    pageList[item].style = "display: inline";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+                else {
+                    pageList[item].style = "display: none";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+            }
+            break;
+        case "bp9":
+            for(var item in pageList) {
+                if (pageList[item] == page9) {
+                    pageList[item].style = "display: inline";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+                else {
+                    pageList[item].style = "display: none";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+            }
+            break;
+        case "bp10":
+            for(var item in pageList) {
+                if (pageList[item] == page10) {
+                    pageList[item].style = "display: inline";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+                else {
+                    pageList[item].style = "display: none";
+                    pageList[item].className = "col-lg-8 col-md-8";
+                }
+            }
+            break;
+    }
 }
 
 
-function changePage2(){
-    var secondPage = document.getElementById('secondPage');
-    var firstPage = document.getElementById('firstPage');
-    var thirdPage = document.getElementById('thirdPage');
-    secondPage.style = "display: inline";
-    firstPage.style = "display: none";
-    thirdPage.style = "display: none";
-    firstPage.className = "col-lg-8 col-md-8";
-    secondPage.className = "col-lg-8 col-md-8";
-    thirdPage.className = "col-lg-8 col-md-8";
-}
 
-function changePage3(){
-    var secondPage = document.getElementById('secondPage');
-    var firstPage = document.getElementById('firstPage');
-    var thirdPage = document.getElementById('thirdPage');
-    secondPage.style = "display: none";
-    firstPage.style = "display: none";
-    thirdPage.style = "display: inline";
-    firstPage.className = "col-lg-8 col-md-8";
-    secondPage.className = "col-lg-8 col-md-8";
-    thirdPage.className = "col-lg-8 col-md-8";
-}
