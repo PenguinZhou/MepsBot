@@ -1,8 +1,8 @@
-# Forum_website
-Assessment and Feedback mode: 运行assessment_backend.py 运行服务端
-Recommendation mode: 运行recommendation.py运行服务端
+# MepsBot in the simulated online mental health community
+Assessment-based mode: run **assessment_backend.py** to start the backend server
+Recommendation-based mode: run **recommendation.py** to start the backend server
 
-在forum文件夹下运行live-server
+Start the live-server under the **Forum** directory to run the community website locally. For example, open the Forum directory using Visual Studio Code, and run the command **live-server** in its terminal. 
 
 下次启动程序时需要的步骤（Recommendation mode）：
 运行 bin/elasticsearch.bat 启动数据库服务器
