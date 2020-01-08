@@ -24,9 +24,6 @@ on MepsBot and propose design considerations for writing
 support technologies in OMHCs.
 
 
-### Demo
-
-![](./figures/assessment-mode-example.mp4)
 
 ## Design of MepsBot in two modes
 
@@ -63,6 +60,7 @@ run **python recommendation.py** to start the backend server.
 Start the live-server under the **forum_website** directory to run the community website locally. For example, open the Forum directory using Visual Studio Code, and run the command **live-server** in its terminal. You can modify the code to test your own community and writing support tools. 
 
 ## Others
+You can check the videos in the folder "figures" to check the demo.
 You can read the "MepsBot_CHI2020_Zhenhui.pdf" to get more details of our MepsBot.
 Hope everyone can be healthy and happy. 
 
