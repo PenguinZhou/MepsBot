@@ -148,18 +148,18 @@ def index():
 		feedback_1 = give_1[random.randint(0, len(give_1) - 1)]
 		if ran_0 == 0:
 			ran = random.randint(0, 2)
-			if ran == 0: #score_pnouns == min(score_pnouns, score_positive, score_social) and random.randint(0, 1) == 1:
+			if ran == 0: 
 				feedback_2 = more_connect[random.randint(0, len(more_connect) - 1)] + '<br>' + '<br>' + pnouns_1[ran_pn1[0]] + ', ' + pnouns_1[ran_pn1[1]] + ', ' + pnouns_1[ran_pn1[2]] + ', ' + pnouns_2[ran_pn2[0]] + ', ' + pnouns_2[ran_pn2[1]] + ', ' + pnouns_2[ran_pn2[2]] + ', ' + pnouns_3[ran_pn3[0]] + ', ' + pnouns_3[ran_pn3[1]] + ', '  + pnouns_3[ran_pn3[2]] + ', ' + pnouns_4[ran_pn4[0]] + ', ' + pnouns_4[ran_pn4[1]] + ', ' + pnouns_4[ran_pn4[2]] + '.'
-			elif ran == 1: #score_social == min(score_pnouns, score_positive, score_social) and random.randint(0, 1) == 1:
+			elif ran == 1:
 				feedback_2 = more_experience[random.randint(0, len(more_experience) - 1)] + '<br>'+ '<br>'  + social_1[ran_so1[0]] + ', ' + social_1[ran_so1[1]] + ', ' + social_1[ran_so1[2]] + ', ' + social_1[ran_so1[3]] + ', ' + social_2[ran_so2[0]] + ', ' + social_2[ran_so2[1]] + ', ' + social_2[ran_so2[2]] +  ', ' + social_2[ran_so2[3]]  + '.'
-			else: # : score_positive == min(score_pnouns, score_positive, score_social)
+			else: 
 				feedback_2 = more_positive[random.randint(0, len(more_positive) - 1)] + '<br>'+ '<br>'  + positive_1[ran_po1[0]] + ', ' + positive_1[ran_po1[1]] + ', ' + positive_1[ran_po1[2]] + ', ' + positive_2[ran_po2[0]] + ', ' + positive_2[ran_po2[1]] + ', ' + positive_2[ran_po2[2]] + ', ' + positive_3[ran_po3[0]] + ', ' + positive_3[ran_po3[1]] + ', '  + positive_3[ran_po3[2]] + ', ' + positive_4[ran_po4[0]] + ', ' + positive_4[ran_po4[1]] + ', ' + positive_4[ran_po4[2]] + '.'
 		else:
 			if score_pnouns == min(score_pnouns, score_positive, score_social):
 				feedback_2 = more_connect[random.randint(0, len(more_connect) - 1)] + '<br>' + '<br>' + pnouns_1[ran_pn1[0]] + ', ' + pnouns_1[ran_pn1[1]] + ', ' + pnouns_1[ran_pn1[2]] + ', ' + pnouns_2[ran_pn2[0]] + ', ' + pnouns_2[ran_pn2[1]] + ', ' + pnouns_2[ran_pn2[2]] + ', ' + pnouns_3[ran_pn3[0]] + ', ' + pnouns_3[ran_pn3[1]] + ', '  + pnouns_3[ran_pn3[2]] + ', ' + pnouns_4[ran_pn4[0]] + ', ' + pnouns_4[ran_pn4[1]] + ', ' + pnouns_4[ran_pn4[2]] + '.'
 			elif score_social == min(score_pnouns, score_positive, score_social):
 				feedback_2 = more_experience[random.randint(0, len(more_experience) - 1)] + '<br>'+ '<br>'  + social_1[ran_so1[0]] + ', ' + social_1[ran_so1[1]] + ', ' + social_1[ran_so1[2]] + ', ' + social_1[ran_so1[3]] + ', ' + social_2[ran_so2[0]] + ', ' + social_2[ran_so2[1]] + ', ' + social_2[ran_so2[2]] +  ', ' + social_2[ran_so2[3]]  + '.'
-			else: # : score_positive == min(score_pnouns, score_positive, score_social)
+			else: 
 				feedback_2 = more_positive[random.randint(0, len(more_positive) - 1)] + '<br>'+ '<br>'  + positive_1[ran_po1[0]] + ', ' + positive_1[ran_po1[1]] + ', ' + positive_1[ran_po1[2]] + ', ' + positive_2[ran_po2[0]] + ', ' + positive_2[ran_po2[1]] + ', ' + positive_2[ran_po2[2]] + ', ' + positive_3[ran_po3[0]] + ', ' + positive_3[ran_po3[1]] + ', '  + positive_3[ran_po3[2]] + ', ' + positive_4[ran_po4[0]] + ', ' + positive_4[ran_po4[1]] + ', ' + positive_4[ran_po4[2]] + '.'
 		
 
@@ -168,18 +168,18 @@ def index():
 		feedback_1 = give_3[random.randint(0, len(give_3) - 1)]
 		if ran_0 == 0:
 			ran = random.randint(0, 2)
-			if ran == 0: #score_pnouns == min(score_pnouns, score_positive, score_social) and random.randint(0, 1) == 1:
+			if ran == 0: 
 				feedback_2 = more_connect[random.randint(0, len(more_connect) - 1)] + '<br>' + '<br>' + pnouns_1[ran_pn1[0]] + ', ' + pnouns_1[ran_pn1[1]] + ', ' + pnouns_1[ran_pn1[2]] + ', ' + pnouns_2[ran_pn2[0]] + ', ' + pnouns_2[ran_pn2[1]] + ', ' + pnouns_2[ran_pn2[2]] + ', ' + pnouns_3[ran_pn3[0]] + ', ' + pnouns_3[ran_pn3[1]] + ', '  + pnouns_3[ran_pn3[2]] + ', ' + pnouns_4[ran_pn4[0]] + ', ' + pnouns_4[ran_pn4[1]] + ', ' + pnouns_4[ran_pn4[2]] + '.'
-			elif ran == 1: #score_social == min(score_pnouns, score_positive, score_social) and random.randint(0, 1) == 1:
+			elif ran == 1: 
 				feedback_2 = more_experience[random.randint(0, len(more_experience) - 1)] + '<br>'+ '<br>'  + social_1[ran_so1[0]] + ', ' + social_1[ran_so1[1]] + ', ' + social_1[ran_so1[2]] + ', ' + social_1[ran_so1[3]] + ', ' + social_2[ran_so2[0]] + ', ' + social_2[ran_so2[1]] + ', ' + social_2[ran_so2[2]] +  ', ' + social_2[ran_so2[3]]  + '.'
-			else: # : score_positive == min(score_pnouns, score_positive, score_social)
+			else: 
 				feedback_2 = more_positive[random.randint(0, len(more_positive) - 1)] + '<br>'+ '<br>'  + positive_1[ran_po1[0]] + ', ' + positive_1[ran_po1[1]] + ', ' + positive_1[ran_po1[2]] + ', ' + positive_2[ran_po2[0]] + ', ' + positive_2[ran_po2[1]] + ', ' + positive_2[ran_po2[2]] + ', ' + positive_3[ran_po3[0]] + ', ' + positive_3[ran_po3[1]] + ', '  + positive_3[ran_po3[2]] + ', ' + positive_4[ran_po4[0]] + ', ' + positive_4[ran_po4[1]] + ', ' + positive_4[ran_po4[2]] + '.'
 		else:
 			if score_pnouns == min(score_pnouns, score_positive, score_social):
 				feedback_2 = more_connect[random.randint(0, len(more_connect) - 1)] + '<br>' + '<br>' + pnouns_1[ran_pn1[0]] + ', ' + pnouns_1[ran_pn1[1]] + ', ' + pnouns_1[ran_pn1[2]] + ', ' + pnouns_2[ran_pn2[0]] + ', ' + pnouns_2[ran_pn2[1]] + ', ' + pnouns_2[ran_pn2[2]] + ', ' + pnouns_3[ran_pn3[0]] + ', ' + pnouns_3[ran_pn3[1]] + ', '  + pnouns_3[ran_pn3[2]] + ', ' + pnouns_4[ran_pn4[0]] + ', ' + pnouns_4[ran_pn4[1]] + ', ' + pnouns_4[ran_pn4[2]] + '.'
 			elif score_social == min(score_pnouns, score_positive, score_social):
 				feedback_2 = more_experience[random.randint(0, len(more_experience) - 1)] + '<br>'+ '<br>'  + social_1[ran_so1[0]] + ', ' + social_1[ran_so1[1]] + ', ' + social_1[ran_so1[2]] + ', ' + social_1[ran_so1[3]] + ', ' + social_2[ran_so2[0]] + ', ' + social_2[ran_so2[1]] + ', ' + social_2[ran_so2[2]] +  ', ' + social_2[ran_so2[3]]  + '.'
-			else: # : score_positive == min(score_pnouns, score_positive, score_social)
+			else: 
 				feedback_2 = more_positive[random.randint(0, len(more_positive) - 1)] + '<br>'+ '<br>'  + positive_1[ran_po1[0]] + ', ' + positive_1[ran_po1[1]] + ', ' + positive_1[ran_po1[2]] + ', ' + positive_2[ran_po2[0]] + ', ' + positive_2[ran_po2[1]] + ', ' + positive_2[ran_po2[2]] + ', ' + positive_3[ran_po3[0]] + ', ' + positive_3[ran_po3[1]] + ', '  + positive_3[ran_po3[2]] + ', ' + positive_4[ran_po4[0]] + ', ' + positive_4[ran_po4[1]] + ', ' + positive_4[ran_po4[2]] + '.'
 		
 		
@@ -191,15 +191,15 @@ def index():
 			ran = random.randint(0, 1)
 			print(1)
 			if IS_score == 3:
-				if ran == 0: #score_pnouns == min(score_pnouns, score_positive, score_social):
+				if ran == 0: 
 					print(2)
 					feedback_2 = more_connect[random.randint(0, len(more_connect) - 1)] + '<br>'+ '<br>'  + pnouns_1[ran_pn1[0]] + ', ' + pnouns_1[ran_pn1[1]] + ', ' + pnouns_1[ran_pn1[2]] + ', ' + pnouns_2[ran_pn2[0]] + ', ' + pnouns_2[ran_pn2[1]] + ', ' + pnouns_2[ran_pn2[2]] + ', ' + pnouns_3[ran_pn3[0]] + ', ' + pnouns_3[ran_pn3[1]] + ', '  + pnouns_3[ran_pn3[2]] + ', ' + pnouns_4[ran_pn4[0]] + ', ' + pnouns_4[ran_pn4[1]] + ', ' + pnouns_4[ran_pn4[2]] + '.'
-				if ran == 1: #score_social == min(score_pnouns, score_positive, score_social):
+				if ran == 1: 
 					feedback_2 = more_positive[random.randint(0, len(more_positive) - 1)] + '<br>'+ '<br>'  + social_1[ran_so1[0]] + ', ' + social_1[ran_so1[1]] + ', ' + social_1[ran_so1[2]] + ', ' + social_1[ran_so1[3]] + ', ' + social_2[ran_so2[0]] + ', ' + social_2[ran_so2[1]] + ', ' + social_2[ran_so2[2]] +  ', ' + social_2[ran_so2[3]]  + '.'
 			else:	
-				if ran==0: #score_positive == min(score_pnouns, score_positive, score_social):
+				if ran==0: 
 					feedback_2 = more_positive[random.randint(0, len(more_positive) - 1)] + '<br>'+ '<br>'  + positive_1[ran_po1[0]] + ', ' + positive_1[ran_po1[1]] + ', ' + positive_1[ran_po1[2]] + ', ' + positive_2[ran_po2[0]] + ', ' + positive_2[ran_po2[1]] + ', ' + positive_2[ran_po2[2]] + ', ' + positive_3[ran_po3[0]] + ', ' + positive_3[ran_po3[1]] + ', '  + positive_3[ran_po3[2]] + ', ' + positive_4[ran_po4[0]] + ', ' + positive_4[ran_po4[1]] + ', ' + positive_4[ran_po4[2]] + '.'
-				if ran==1: #score_social == min(score_pnouns, score_positive, score_social):
+				if ran==1: 
 					feedback_2 = more_experience[random.randint(0, len(more_experience) - 1)] + '<br>'+ '<br>'  + social_1[ran_so1[0]] + ', ' + social_1[ran_so1[1]] + ', ' + social_1[ran_so1[2]] + ', ' + social_1[ran_so1[3]] + ', ' + social_2[ran_so2[0]] + ', ' + social_2[ran_so2[1]] + ', ' + social_2[ran_so2[2]] +  ', ' + social_2[ran_so2[3]]  + '.'
 		else:
 			if IS_score == 3:
@@ -236,18 +236,6 @@ def index():
 		return jsonify({'mode': 'AF', 'IS_score': int(IS_score), 'ES_score': int(ES_score), 'feedback_1': feedback_1, 'feedback_2': feedback_2, 'details': details})
 
 	
-
-# def assess(comment):
-# 	features = get_vector(txt, LIWC_features)
-#     # print(features)
-#     # print(len(features))
-#     # print('+' * 40)
-#     # print(txt)
-#     IS_score = IS_clf.predict(features.reshape(1, -1))
-#     ES_score = ES_clf.predict(features.reshape(1, -1))
-
-
-	# return [IS_score, ES_score, feedback]
 
 def saveFile(comment):
 	file_name = 'record/AF_record_' + str(int(time.time())) + '.csv'

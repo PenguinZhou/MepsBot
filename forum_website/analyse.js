@@ -184,11 +184,11 @@ function refresh(){
     document.getElementById("reply").placeholder = 'What are your thoughts?';
 }
 
-
-AF_link = ['https://ust.az1.qualtrics.com/jfe/form/SV_cSeQp6Vp3HD5mq9', 'https://ust.az1.qualtrics.com/jfe/form/SV_3duYolI1lpVeU0R', 'https://ust.az1.qualtrics.com/jfe/form/SV_3awSXNNJMUds7u5'];
-RE_link = ['https://ust.az1.qualtrics.com/jfe/form/SV_6yDq7gEQBj154oJ', 'https://ust.az1.qualtrics.com/jfe/form/SV_5opGe34GORLPiGF', 'https://ust.az1.qualtrics.com/jfe/form/SV_b1Jf6bgo3s6BwMZ'];
-AF_final_link = 'https://ust.az1.qualtrics.com/jfe/form/SV_7VBbK0ElQijHoi1';
-RE_final_link = 'https://ust.az1.qualtrics.com/jfe/form/SV_cBxm2Vo0YLXif1r';
+// // Link to the qustionnaires.
+// AF_link = ['', '', ''];
+// RE_link = ['', '', ''];
+// AF_final_link = '';
+// RE_final_link = '';
 
 
 
@@ -228,8 +228,8 @@ function submit_one(){
             // document.getElementById("survey_msg_1").innerHTML = 'You need to refer the initial comment and final submitted comment in this page when filling the survey.' + '<br>'
             //                                                 + 'When you finish, click the \'Next task\' button to start next task';
             click_record = '';
-            if (back.mode == 'AF') {window.open(AF_link[questionNumber], '_blank');}
-            if (back.mode == 'RE') {window.open(RE_link[questionNumber], '_blank');}
+            // if (back.mode == 'AF') {window.open(AF_link[questionNumber], '_blank');}
+            // if (back.mode == 'RE') {window.open(RE_link[questionNumber], '_blank');}
             questionNumber ++;
             changeQuestion();
             first_click = true;
@@ -240,8 +240,8 @@ function submit_one(){
                 document.getElementById("OP-title").innerHTML = 'Thank you for your participation.';
                 document.getElementById("OP-content").innerHTML = 'Really appreciate you.'; 
                 
-                if (back.mode == 'AF') {document.getElementById("reply").value = 'Link to final survey: ' + AF_final_link;}
-                if (back.mode == 'RE') {document.getElementById("reply").value = 'Link to final survey: ' + RE_final_link;}
+                // if (back.mode == 'AF') {document.getElementById("reply").value = 'Link to final survey: ' + AF_final_link;}
+                // if (back.mode == 'RE') {document.getElementById("reply").value = 'Link to final survey: ' + RE_final_link;}
             }
                 
         }
