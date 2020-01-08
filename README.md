@@ -26,11 +26,11 @@ support technologies in OMHCs.
 
 ### Demo
 
-![](../figures/assessment-mode-example.mp4)
+![](./figures/assessment-mode-example.mp4)
 
 ## Design of MepsBot in two modes
 
-<img src="./figures/two_modes.jpg" width = "60%" height = "60%">
+<img src="./figures/two_modes.JPG" width = "60%" height = "60%">
 
 
 
