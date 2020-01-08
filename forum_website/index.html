@@ -61,8 +61,8 @@
         <div class="headernav" >
             <div class="container" >
                 <div class="row" >
-                    <div class="col-lg-1 col-xs-3 col-sm-2 col-md-2 logo "><a href="index.html"><img
-                                src="reddit-long.png" height="40" width="120" alt="" /></a></div>
+                    <div class="col-lg-1 col-xs-3 col-sm-2 col-md-2 logo "><img
+                                src="reddit-long.png" height="40" width="120" alt="" /></div>
                     <!--<div class="col-lg-4 col-xs-12 col-sm-5 col-md-4 selecttopic">-->
                         <!--/r/depression-->
                     <!--</div>-->
@@ -122,12 +122,10 @@
 
                             </div>
                             <div class="posttext pull-left">
-                                <h2 style="font-weight: bold" id="OP-title">I have no friends</h2>
-                                <p style="color: #3b4249" id="OP-content">I have no friends at all. Ive just came out of
-                                    a 7 year relationship 2 months ago and since then I've been out drinking with someone
-                                    once but that was 6 weeks ago. I haven't spoke to anybody apart from my parents for over
-                                    1 month I've also lost my job. I just wish someone could talk to me because I'm going
-                                    insane listening to silence. What is the point anymore :(.</p>
+                                <h2 style="font-weight: bold" id="OP-title">I am drowning in negativity</h2>
+                                <p style="color: #3b4249" id="OP-content">
+                                    I feel a deep sense of fatigue and hatred inside of me. It's sick and dark, but extremely magnetic, addictive, powerful, and it hasn't left me. It's not clear whether this is because of my father, who I am told had felt a similar level of hatred towards his father. It's a cycle of repressed hate that grows and consumes, weak people asserting strength and extending the sense of defeat. I have a chronic disease of personality, it is eating at me, and no amount of belching is getting it out of me.
+                                </p>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -155,7 +153,7 @@
                             <div class="topwrap" style="height: 250px">
                                 <div class="userinfo pull-left">
                                     <div class="avatar">
-                                        <h5 style="font-weight: bold">Helper</h5>
+                                        <h5 style="font-weight: bold">David</h5>
                                     </div>
 
                                 </div>
@@ -177,17 +175,21 @@
 
                                 <div class="pull-right postreply">
                                     <!--<div class="pull-left smile"><a href="#"><i class="fa fa-smile-o"></i></a></div>-->
+                                    
                                     <div id='submit_btn' class="pull-left" style='display: none'>
-                                        <button onclick='submit_one()' class="btn btn-primary" style="margin-right: 10px">Submit</button>
+                                       <button onclick='submit_one()' class="btn btn-primary" style="margin-right: 10px">Continue to submit</button>
+                                       &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                       &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                       
                                     </div>
                                     <div class="pull-left">
-                                        <button onclick='showResult()' class="btn btn-primary">Preview</button>
+                                        <button id='preview_btn' onclick='preview()' class="btn btn-primary">Preview</button>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
 
 
-                                <div class="clearfix"></div>
+                                <!-- <div class="clearfix"></div> -->
                             </div>
                         <!--</form>-->
                     </div><!-- POST -->
@@ -1477,13 +1479,23 @@
             </div>
             <div class="col-lg-4 col-md-4">
                 <!-- -->
+
                 <div id='title_box' class="sidebarblock" stlye="margin-bottom:0;" style="display: none">
-                    <h3 id = 'title' style="font-weight: bold; font-size: 18pt">None</h3>
+                    
+                    <h3 id = 'title' style="font-weight: bold; font-size: 12pt">
+                        <img src="robot_1.png" height="45" width="45" alt="" />Hi, MepsBot here!</h3>
+                    <div class="divline"></div>
+                    <div class="blocktxt" style=" min-height: 40px;">
+                        <p id="intro">Example 1</p>
+                        <ul class="cats">
+                        </ul>
+                    </div>
+                    <!-- <h3 id="intro" style="font-weight: bold; min-height: 40px">None</h3> -->
                     <div>
-                        <div id='pre_rec' class="pull-left" >
+                        <div id='pre_rec' class="pull-left" style="display: none">
                             <button onclick='pre_rec()' class="btn-tw" style="margin-right: 10px; color:rgb(12, 12, 12)" style="display: none">Previous</button>
                         </div>
-                        <div id='next_rec' class="pull-left" >
+                        <div id='next_rec' class="pull-left" style="display: none">
                             <button onclick='next_rec()' class="network btn-gp" style="margin-right: 10px; color:rgb(12, 12, 12)" style="display: none">More</button>
                         </div>
                     </div>
@@ -1494,25 +1506,66 @@
             <div class="col-lg-4 col-md-4">
                     <!-- -->
                 <div id='assess_box' class="sidebarblock" stlye="margin-bottom:0;" style="display: none">
-                    <h3 id="EvaluationResult" style="font-weight: bold; min-height: 40px">None</h3>
+                    <!-- <h3 style="font-weight: bold;">The analysis on your comment shows that:</h3> -->
+                    <!-- <h3 id='assess_1' style="font-weight: bold; font-size: 12pt"> The analysis on your comment shows that:</h3> -->
+                    <!-- <div class="divline"></div> -->
+                    <div class="blocktxt" style=" min-height: 40px;">
+                        <p id="EvaluationResult">Example 1</p>
+                        <ul class="cats">
+                        </ul>
+                    </div>
+                    <!-- <p id="EvaluationResult" style="min-height: 40px">None</p> -->
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-4">                
                 <div id='feedback_box' class="sidebarblock" stlye="margin-bottom:0;" style="display: none">
-                    <h3 style="font-weight: bold"> A small suggestion</h3>
+                    <h3 id='feedback_1' style="font-weight: bold; font-size: 12pt"> A small suggestion</h3>
                     <div class="divline"></div>
-                    <h3 id="suggestion" style="font-weight: bold; min-height: 40px">None</h3>
+                    <div class="blocktxt" style=" min-height: 40px;">
+                        <p id="suggestion">Example 1</p>
+                        <ul class="cats">
+                        </ul>
+                    </div>
+                    
+                    <!-- <p id="suggestion" style="min-height: 40px">None</p> -->
                 </div>
             </div>
+
+            <div class="col-lg-4 col-md-4">                
+                    <div id='re_feedback_box' class="sidebarblock" stlye="margin-bottom:0;" style="display: none">
+                        <h3 id='re_feedback' style="font-weight: bold; font-size: 12pt"> A small suggestion</h3>
+                        <div class="blocktxt" style=" min-height: 20px;">
+                            <p id='re_note'> A small suggestion</p>
+                            <ul class="cats">
+                            </ul>
+                        </div>
+                        
+                        <!-- <div class="divline"></div> -->
+                        <!-- <div class="blocktxt" style=" min-height: 40px;">
+                            <p id="suggestion">Example 1</p>
+                            <ul class="cats">
+                            </ul>
+                        </div> -->
+                        <!-- <div>
+                            <div id='pre_rec' class="pull-left" style="display: none">
+                                <button onclick='pre_rec()' class="btn-tw" style="margin-right: 10px; color:rgb(12, 12, 12)" style="display: none">Previous</button>
+                            </div>
+                            <div id='next_rec' class="pull-left" style="display: none">
+                                <button onclick='next_rec()' class="network btn-gp" style="margin-right: 10px; color:rgb(12, 12, 12)" style="display: none">More</button>
+                            </div>
+                        </div> -->
+                        <!-- <p id="suggestion" style="min-height: 40px">None</p> -->
+                    </div>
+                </div>
 
             <div class="col-lg-4 col-md-4">
                 <!-- -->
                 <div id='help_box_1' class="sidebarblock" stlye="margin-bottom:0;" style="display: none">
                     <!-- <h3 style="font-weight: bold"></h3> -->
                     <!-- <div class="divline"></div> -->
-                    <div class="blocktxt" style=" min-height: 100px;">
-                        <h3 id="rec_1">Example 1</h3>
+                    <div class="blocktxt" style=" min-height: 40px;">
+                        <p id="rec_1">Example 1</p>
                         <ul class="cats">
                         </ul>
                     </div>
@@ -1523,10 +1576,10 @@
                 <div id='help_box_2' class="sidebarblock" stlye="margin-bottom:0;" style="display: none">
                     <!-- <h3 style="font-weight: bold">Writing Help</h3> -->
                     <!-- <div class="divline"></div> -->
-                    <div class="blocktxt" style=" min-height: 100px;">
-                        <h3 id="rec_2">
+                    <div class="blocktxt" style=" min-height: 40px;">
+                        <p id="rec_2">
                             I understand, when friends start having families its hard for the ones who are left behind - their priorities shift, but believe that has absolutely nothing to do with you. Are their any other ppl u know who don't have kids and still want to go out and do stuff? If yes, try focusing on them maybe?
-                        </h3>
+                        </p>
                         <ul class="cats">
                         </ul>
                     </div>
@@ -1537,14 +1590,66 @@
                 <div id='help_box_3' class="sidebarblock" stlye="margin-bottom:0;" style="display: none">
                     <!-- <h3 style="font-weight: bold">Writing Help</h3> -->
                     <!-- <div class="divline"></div> -->
-                    <div class="blocktxt" style=" min-height: 100px;">
-                        <h3 id="rec_3">Example 3</h3>
+                    <div class="blocktxt" style=" min-height: 40px;">
+                        <p id="rec_3">Example 3</p>
                         <ul class="cats">
                         </ul>
                     </div>
                 </div>
             </div>
 
+            
+            <div class="col-lg-4 col-md-4">
+                <!-- -->
+                
+                <div id='initial_com_box' class="sidebarblock" stlye="margin-bottom:0;" style="display: none">
+                        <!-- <div class="col-lg-1 col-xs-3 col-sm-2 col-md-2 logo "> MepsBot<img
+                            src="robot_1.png" height="50" width="50" alt="" /></div> -->
+                    <h3 style="font-weight: bold">
+                        Your initial comment</h3>
+                    <div class="divline"></div>
+                    <div class="blocktxt" style=" min-height: 100px;">
+                        <h3 id="initial_com">Example 3</h3>
+                        <ul class="cats">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <!-- -->
+                <div id='submitted_com_box' class="sidebarblock" stlye="margin-bottom:0;" style="display: none">
+                    <h3 style="font-weight: bold">Your final submitted comment</h3>
+                    <div class="divline"></div>
+                    <div class="blocktxt" style=" min-height: 100px;">
+                        <h3 id="submitted_com">Example 3</h3>
+                        <ul class="cats">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <!-- -->
+                <div id='survey_box' class="sidebarblock" stlye="margin-bottom:0;" style="display: none">
+                    <!-- <h3 style="font-weight: bold">Writing Help</h3> -->
+                    <!-- <div class="divline"></div> -->
+                    <div class="blocktxt" style=" min-height: 100px;">
+                        <h3 id="survey_msg">Example 3</h3>
+                        
+                        <ul class="cats">
+                        </ul>
+                    </div>
+                    <a id='link' href="" target="_blank">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Link to the survey &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a>
+                    <div class="blocktxt" style=" min-height: 100px;">
+                        <h3 id="survey_msg_1">Example 3</h3>
+                        <ul class="cats">
+                        </ul>
+                    </div>
+                    <div id='next_task' class="pull-left">
+                        <button onclick='next_task()' class="network btn-gp" style="margin-right: 10px; color:rgb(12, 12, 12)" style="display: none">Start next task.</button>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
 
